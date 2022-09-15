@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Property di Object</title>
+</head>
+<body>
+    <script>
+        // cara penulisan objek yang pertama :
+        const orang1 = {};
+        // menambah atau mengubah
+        orang1["nama"] = "Sasuke";
+        orang1["alamat"] = "Wakanda";
+        orang1["umur"] = "45";
+
+        // menghapus
+        // delete orang["umur"];
+
+        // cara penulisan objek yang kedua
+        const orang2 = {
+            nama: "Uciha Itachi",
+            alamat: "Wakanda",
+            umur: "40"
+        }
+
+        const orang = {
+            'nama lengkap' : "tiyanmoe soo",
+            'no telp' : "08xxx",
+            alamat: "Indonesia",
+            umur: "17"
+                };
+
+        // ubah properti / artibute
+        let person = {}
+        person["nama"] = "tiyanmoe soo";
+        person["alamat"] = "Indonesia";
+        person["umur"] = 17;
+
+        console.info(`Nama : ${orang["nama lengkap"]}`);
+        console.info(`No Telp : ${orang['no telp']}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`Umur : ${orang.umur}`);
+
+        console.table(orang1);
+        console.table(orang2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN (Not a Number)</title>
+</head>
+
+<body>
+    <script>
+        document.writeln(`<p>${parseInt("salah")}</p>`);
+        document.writeln(`<p>${parseFloat("1.1text")}</p>`);
+
+        // Number () tidak akan mentolerir kesalahan pada data
+        document.writeln(`<p>${Number("1.1ups")}</p>`);
+        document.writeln(`<p>${Number("1x")}</p>`);
+        document.writeln(`<p>${Number("bukan number")}</p>`);
+    </script>
+</body>
+
+</html>

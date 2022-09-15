@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+
+<body>
+    <script>
+        let arrayNama = ["Eko", "Kurniawan", "Khannedy"]; // bentuk array
+
+        console.table(arrayNama); // menampilkan dalam bentuk tabel
+        console.info(arrayNama[0]);
+        console.info(arrayNama[1]);
+        console.info(arrayNama[2]);
+
+        let siswa = [];
+        siswa[0] = 'Salma';
+        siswa[2] = 'Sule';
+        siswa[1] = 'Sinyo';
+        siswa.push('Fitri');
+        siswa.push('Alfi', 'Mahfudzoh', 'Titin', 'Sriyani', 'Nihayatut', 'Ana', 'Nur', 'Farida'); // fungsi ini digunakan untuk menambahkan jumlah data yang bersifat banyak namun otomatis tertambah di bagian paling akhir.
+        siswa[2] = 'Andre'; // fungsi ini bukan hanya untuk menambahkan tetapi juga mengubah
+        // delete siswa[4];
+        siswa[siswa.length] = 'data baru'; // menambahkan data siswa secara dinamis tanpa harus memakai fungsi push
+        siswa.sort(); //mengurutkan data siswa berdasarkan abjad a-z
+        siswa.reverse(); // mengurutkan data siswa berdasarkan abjad z-a
+        
+        console.table(siswa);
+        console.info(siswa.length);
+    </script>
+</body>
+
+</html>

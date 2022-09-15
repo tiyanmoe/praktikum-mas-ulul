@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Contoh 2</title>
+</head>
+
+<body>
+    <script>
+
+        const name = "Tiyanmoe Soo";
+        const firstName = "Tiyanmoe";
+        const middleName = "Kyung";
+        const lastName = "Soo";
+        const template = `Name : ${firstName} ${middleName} ${lastName}`;
+        const lama = "Name : " + firstName + " " + middleName + " " + lastName;
+
+        console.info(template);
+
+        const nilai = 50;
+        const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+
+        console.info(template2);
+
+        let multilineString = `
+        Nama saya adalah Titin Sriyani
+        Halodek
+        kadang kangen coki pardaidai
+        CHUAKKKSSSSSSS
+        Tes kuy
+        `;
+
+        document.writeln("<pre>");
+        document.writeln(multilineString);
+        document.writeln("</pre>");
+
+    </script>
+</body>
+
+</html>

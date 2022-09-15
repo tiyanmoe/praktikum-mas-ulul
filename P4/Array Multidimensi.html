@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Multidimensi</title>
+</head>
+
+<body>
+    <script>
+        let students = [
+            ["santi", "siwi", "jaka", "nisa"], 
+            ["padang", "ngapak", "jawa", "solo"], 
+            ["081212", "081111", "081222", "081333"], 
+            ["17 tahun", "18 tahun", "23 tahun", "24 tahun"]
+        ];
+        console.table(students);
+
+        let studentsData = [
+            ['santi', 'padang', '081212', '17 tahun'], 
+            ['juleha', 'magelang', '082222', '18 tahun'], 
+            ['sri', 'jogja', '081333', '23 tahun'], 
+            ['imas', 'solo', '081444', '24 tahun']];
+        studentsData.sort();
+        console.table(studentsData);
+
+        let studentsData1 = {
+            nama: ["santi", "siwi", "jaka", "nisa"], 
+            alamat:["padang", "ngapak", "jawa", "solo"], 
+            telp: ["081212", "081111", "081222", "081333"], 
+            umur: ["17 tahun", "18 tahun", "23 tahun", "24 tahun"],
+            }
+        console.table(studentsData1);
+
+        // sintak ini bukan hanya berlaku untuk array, tapi juga untuk object
+    </script>
+</body>
+
+</html>
