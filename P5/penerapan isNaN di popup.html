@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENERAPAN IF DAN ISNAN DI POPUP</title>
+</head>
+
+<body>
+    <script>
+        // KUIS PENERAPAN IF DAN POP UP //
+        const name = prompt("Siapa Nama You?");
+        const nilai = prompt("Berapa Nilai You?");
+
+        // CARA PAK ULUL - 1
+        if (isNaN(nilai)) {
+            alert(`Ojok nakal yo${name}! Masukno nilai berupa angka, guduk huruf.`);
+        } else if (nilai > 80) {
+            document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+        } else if (nilai > 70) {
+            document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+        } else if (nilai > 60) {
+            document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`)
+        } else {
+            document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. Coba dipelajari lagi ya materinya!.</p>`)
+        }
+
+        // CARA PAK ULUL - 2
+        if (isNaN(nilai)) {
+            alert(`Ojok nakal yo${name}! Masukno nilai berupa angka, guduk huruf.`);
+        } else
+            if (nilai > 80) {
+                document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+            } else if (nilai > 70) {
+                document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+            } else if (nilai > 60) {
+                document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`)
+            } else {
+                document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. Coba dipelajari lagi ya materinya!.</p>`)
+            }
+
+         // CARA TITIN
+        // if (nilai > 80) {
+        //     document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+        // } else if (nilai > 70) {
+        //     document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+        // } else if (nilai > 60) {
+        //     document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. So Good Job for U!</p>`);
+        // } else if (isNaN(nilai)) {
+        //     document.writeln(confirm(`Jangan nakal yaaa ${name}!!! masukkan nilai berupa angka hey!`))
+        // } else {
+        //     document.writeln(`<p>Halo <b>${name}</b>, nilaimu <b>${nilai}</b>. Coba dipelajari lagi ya materinya!.</p>`)
+        // }
+
+    </script>
+</body>
+
+</html>
