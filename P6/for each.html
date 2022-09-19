@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each pada Array</title>
+</head>
+<body>
+    <script>
+        // menggunakan "each" di tengah-tengah for dan array //
+        function myFunction(item, index, arr) {
+            // arr[index] = item * 10;
+            console.log(item*10);
+        }
+
+        const numbers = [65, 44, 22, 4];
+        numbers.forEach(myFunction);
+        numbers.forEach(item => console.log(item));
+        // latihan forEach //
+        // dengan menggunakan forEach, cetaklah nama=nama kota didalam array
+        // const kota = ["Jogja", "Solo", "Madiun", "Jekardah", "Bali"];
+        const kota = ["Jogja", "Solo", "Madiun", "Jekardah", "Bali"];
+        console.log(kota);
+    </script>
+</body>
+</html>

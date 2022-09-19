@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Pada Array</title>
+</head>
+<body>
+    <script>
+        // MENGGUNAKAN "in" di tengah-tengah for //
+        const person = {
+            firstName: "Tiyan", // firstName adalah property, Tiyan adalah value
+            middleName: "Moe",
+            lastName: "Soo"
+        }
+        for (const property in person) {
+            console.log(person.lastName); // mencetak firstname saja
+            console.log(`Property ${property}: ${person[property]}`);
+        }
+
+        // array
+        const nama = ["Tiyan", "Moe", "Soo"];
+        for (const index in nama) {
+            document.writeln(`<p>Index ${index}: ${nama[index]}</p>`)
+        }
+
+        // latihan array //
+        const names = ["Tino", "Tono", "Toni", "Tony"];
+        for (const property in names) {
+            console.log(`${property}: ${names[property]}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Switch Case dan Console</title>
+</head>
+<body>
+    <script>
+        // latihan
+        // Mas Joko ingin membuat 4 nada bel untuk pintu rumahnya.
+        // Bunyinya:
+        // 1. "Moo"
+        // 2. "Miaww"
+        // 3. "Mbeek"
+        // 4. "Krik Krik"
+        // Buatlah kode menggunakan switch case dengan kondisi angka random 1-4.
+        // Bisa pakai Math.random(). Misal saat angka random muncul angka 1, maka memberikan console.log "Moo".
+        
+        var bunyi = (Math.floor(Math.random() * 5))
+        console.log(bunyi);
+
+        switch (bunyi) {
+            case 1:
+                console.log("Moo");
+                break;
+            case 2:
+                console.log("Miaww");
+                break;
+            case 3:
+                console.log("Mbeek");
+                break;
+            default:
+                console.log("Krik-krik");
+        }
+
+    </script>
+</body>
+</html>
