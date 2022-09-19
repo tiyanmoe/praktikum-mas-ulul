@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- responsivitas dari penggunaa browser, yaitu pc dan ponsel-- -->
+    <title>Dasar-dasar Tag html</title>
+    <style>
+        body {
+            margin: 20px 25px 10px 25px;
+            /* atas kanan bawah kiri */
+            padding: 10px 30px; 
+            /* atas-bawah kanan-kiri */
+            /* padding itu didalam */
+            /* background-color: #a3b9d1; */           
+            border: 1px solid#a3b9d1;
+            /* margin ada diluar */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar atau Menu -->
+    <div>
+        <center>
+            <a href="">Beranda |</a>
+            <a href="profil.html">Profil |</a>
+            <a href="news.html">News |</a>
+            <a href="contact.html">Contact |</a>
+        </center>
+    </div>
+    <br>
+    <!-- Foto Banner -->
+    <div>
+        <center>
+            <img src="http://qoryatussalam.com/uploads/system/logo/logo-light.png" width="100px" height="100px"
+                </center>
+    </div>
+
+    <h1>Santri Pro</h1>
+    <p>ini deskripsi singkat</p>
+    <hr>
+    <p>coba bikin garis dan bawahnya ada tabel</p>
+    <table border="" style="width: 100%;">
+        <tr>
+            <!--ini baris-->
+            <td colspan="2"><b>Nama</b></td>
+        </tr>
+        <tr>
+            <td>Ulul</td>
+            <td>08xxxx</td>
+        </tr>
+    </table>
+    <br>
+    <div><a href="https://google.com">Klik Link google</a></div>
+    <a href="www.um.ac.id">YuEm</a>
+    <a href="www.um.ac.id" target="_blank">Blank</a>
+    <!-- jika blank maka akan membuka tab baru -->
+    <a href="www.um.ac.id" target="_self">Self</a>
+    <!-- jika self maka akan reload halaman website -->
+    <a href="www.um.ac.id" target="_top">Top</a>
+    <!-- jika top maka akan kembali ke halaman atas -->
+    <!-- pastikan link yang digunakan sudah ada SSLnya apa belum -->
+
+    <ol type="1">
+        <li>kamar A</li>
+        <ul type="square">
+            <li>A1</li>
+            <li>A2</li>
+        </ul>
+        <li>kamar B</li>
+        <ul type="square">
+            <li>B1</li>
+            <li>B2</li>
+            <li>B3</li>
+            <li>B4</li>
+        </ul>
+        <li>kamar C</li>
+        <ul type="square">
+            <li>C1</li>
+            <li>C2</li>
+            <li>C3</li>
+            <li>C4</li>
+            <li>C5</li>
+            <li>C6</li>
+        </ul>
+    </ol>
+    <center>
+        <h3>Form Kontak</h3>
+        <form action="" method="">
+            <div>
+                <input type="text" name="" value="" required placeholder="input nama disini ya"><br>
+                <input type="email" name="" value="" required placeholder="input email disini ya"><br>
+                <input type="password" name="" value="" required placeholder="input password disini ya"><br>
+                <input type="number" name="" value="" min="123" max="12345678910" required placeholder="input no telp disini ya"><br>
+                <br>
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+    </center>
+    <hr>
+    <footer>
+        <center>© Pondok Pesantren Qoryatussalam - Santriwati Programmer</center>
+    </footer>
+</body>
+
+</html>
