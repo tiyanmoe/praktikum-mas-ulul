@@ -1,3 +1,11 @@
-h1{
-    color: cadetblue;
+h1{color: cadetblue;}
+
+#judulhijau{color: chartreuse;}
+
+.tebalungu{
+color: rgb(114, 4, 218);
+font-weight: 1000;
+font-size: 30px;
+background-color: azure;
+border: 1px solid seagreen;
 }
