@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 2</title>
+</head>
+
+<body>
+    <script>
+        let firstName2 = prompt("Siapa nama depanmu?");
+        let lastName2 = prompt("Siapa nama sanadmu?");
+        let asal = prompt("darimana asalmu?");
+
+        // membuat function
+        function Halo(firstName, lastName, asal) {
+            document.writeln(`<p>Assalamualaikum Wr. Wb., Selamat Pagi, Shalom, Namo Bhuddaya, Salam Kebajikan. Nama saya <b>${firstName} ${lastName} asal saya dari ${asal}</b></p>`);
+        }
+
+        // cara memanggil function, sintak ini juga digunakan untuk melanjutkan skrip tanpa harus membuat function lagi
+        Halo("Tiyan", "Soo", "Bojonegoro");
+        document.writeln("<br>Ini paragraf pemisah</br>");
+        Halo(firstName2, lastName2, asal);
+        document.writeln("<br>Ini paragraf pemisah lagi</br>")
+        Halo("Kyung", "Soo", "Seoul");
+        // untuk function yang ada parameternya tidak boleh kosong, jadi harus diisi seperti sintak berikut:
+        // Halo("", "", ""); 
+    </script>
+</body>
+
+</html>

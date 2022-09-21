@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Function</title>
+</head>
+
+<body>
+    <script>
+        // Menghitung Luas Menggunakan Function dan Prompt //
+        // Baris - 1 : Lingkaran
+        // Baris - 2 : Persegi Panjang
+        // Baris - 3 : Segitiga Sama Kaki
+        // Baris - 4 : Jajar Genjang
+        // Baris - 5 : Persegi (tiyanmoe)
+
+        // function hitungLuasPersegi(sisi) {
+        //     let hasilpersegi = sisi * sisi;
+        //     document.writeln(`<p><b>Jadi, luas persegi dari panjang sisi</b> ${sisi} adalah ${hasilpersegi}</p>`);
+        // }
+        // let inputsisi = prompt("masukkan nilai sisi");
+        // hitungLuasPersegi(inputsisi);
+        // document.writeln("<br>");
+        // hitungLuasPersegi(5);
+
+        // BARIS - 1 | LUAS LINGKARAN // 
+        // function hitungluasLingkaran(phi, jarijari1, jarijari2) {
+        //     let hasillingkaran = phi * jarijari1 * jarijari2; 
+        //     document.writeln(`<p>Jadi, luas lingkaran dari jari-jari 1 <b>${jarijari1}</b>, dan jari-jari 2 <b>${jarijari2}</b> adalah <b>${hasillingkaran}</b></p>`);
+        // }
+        // const phi = 3.14;
+        // let inputjarijari1 = prompt("masukkan nilai jari-jari 1");
+        // let inputjarijari2 = prompt("masukkan nilai jari-jari 2");
+        // hitungLuasLingkaran(phi, jarijari1, jarijari2);
+
+        // // BARIS - 2 : | PERSEGI PANJANG //
+        // let panjang = prompt("masukkan nilai panjang");
+        // let lebar = prompt("masukkan nilai lebar");
+        // function hitungLuasPersegiPanjang(panjang, lebar) {
+        //     let hasilpp = panjang * lebar; 
+        //     document.writeln(`<p><b>Jadi, luas Persegi Panjang dengan panjang</b> ${panjang},<b>lebar</b> ${lebar} adalah ${hasilpp}</p>`);
+        // }
+        // hitungLuasPersegiPanjang(panjang, lebar);
+
+        // // BARIS - 3 : | SEGITIGA SAMA KAKI //
+        // let alas = prompt("masukkan nilai alas");
+        // let tinggi = prompt("masukkan nilai tinggi");
+        // function hitungSegitiga(alas, tinggi) {
+        //     let hasilsegitiga = 0.5 * alas * tinggi; 
+        //     document.writeln(`<p><b>Jadi, luas Segitiga dengan alas</b> ${alas},<b>tinggi</b> ${tinggi} adalah ${hasilsegitiga}</p>`);
+        // }
+        // hitungSegitiga(alas, tinggi);
+
+        // // BARIS - 3 : | JAJAR GENJANG //
+        // let alasjj = prompt("masukkan nilai alas");
+        // let tinggijj = prompt("masukkan nilai tinggi");
+        // function hitungjj(alasjj, tinggijj) {
+        //     let hasiljajar = alasjj * tinggijj; 
+        //     document.writeln(`<p><b>Jadi, luas Jajargenjang dengan alas</b> ${alasjj},<b>tinggi</b> ${tinggijj} adalah ${hasiljajar}</p>`);
+        // }
+        // hitungjj(alasjj, tinggijj);
+
+        // BARIS -5 | LUAS PERSEGI | POLA YANG MUDAH DI PAHAMI SEPERTI INI// 
+        function hitungLuasPersegi(sisi) {
+            let hasilpersegi = sisi * sisi;
+            document.writeln(`<p><b>Jadi, luas persegi dari panjang sisi</b> ${sisi} adalah ${hasilpersegi}</p>`);
+        }
+        let inputsisi = prompt("masukkan nilai sisi");
+        hitungLuasPersegi(inputsisi);
+        document.writeln("<br>");
+        hitungLuasPersegi(5);
+    </script>
+</body>
+
+</html>

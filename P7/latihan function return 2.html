@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Menggunakan Function, Loop, Return</title>
+</head>
+<body>
+    <script>
+    // LATIHAN : //
+    // Buatlah function pakai return menampilkan angka dari inputen pertama sampai inputan kedua //
+    
+    function perulangan(nilaii) {
+        if (nilaii >=90)  {
+            return "A";
+        } else if (nilaii >= 80) {
+            return "B";
+        } else if (nilaii >= 70) {
+            return "C";
+        } else if (nilaii >= 60) {
+            return "D";
+        } else {
+            return "E";
+        }
+    }
+    let inputAwal = prompt("Masukkan inputan pertama");
+    let inputAkhir = prompt("Masukkan inputan kedua");
+    let hasil = konversinilai(inputAwal, inputAkhir);
+    document.writeln(`<b>Nilaimu adalah ${hasil}</b>`);
+    </script>
+</body>
+</html>

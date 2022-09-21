@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Menggunakan Function Return</title>
+</head>
+<body>
+    <script>
+    // LATIHAN : //
+    // Buatlah fungsi untuk menghitung nilai seorang murid.
+    // Jika nilainya 90 atau lebih, maka mendapatkan nilai A.
+    // Jika nilainya 80 atau lebih, tapi tidak lebih besar dari 90 maka nilainya B.
+    // Jika nilainya 70 atau lebih, tapi tidak lebih besar dari 80 maka nilainya C.
+    // Jika nilainya 60 atau lebih, tapi tidak lebih besar dari 70 maka nilainya D.
+    // Dibawah dari 60 maka nilainya E.
+    // Output yang diharapkan:
+    // Nilai saya 80 berarti nilainya adalah B
+    
+    // CARA TITIN | MASIH MENGGUNAKAN WRITELN //
+    function nilai() {
+        let inputnilai = prompt("Masukkan nilai Anda :");
+        if (inputnilai >=90)  {
+            document.writeln(`<p>Nilai saya <b>${inputnilai}</b> berarti nilainya adalah <b>A</b></p>`);
+        } else if (inputnilai >= 80) {
+            document.writeln(`<p>Nilai saya <b>${inputnilai}</b> berarti nilainya adalah <b>B</b></p>`);
+        } else if (inputnilai >= 70) {
+            document.writeln(`<p>Nilai saya <b>${inputnilai}</b> berarti nilainya adalah <b>C</b></p>`);
+        } else if (inputnilai >= 60) {
+            document.writeln(`<p>Nilai saya <b>${inputnilai}</b> berarti nilainya adalah <b>D</b></p>`);
+        } else {
+            document.writeln(`<p>Nilai saya <b>${inputnilai}</b> berarti nilainya adalah <b>E</b></p>`)
+        }
+    }
+    nilai();
+
+    // CARA MAS ULUL | BENAR //
+    function konversinilai(nilaii) {
+        if (nilaii >=90)  {
+            return "A";
+        } else if (nilaii >= 80) {
+            return "B";
+        } else if (nilaii >= 70) {
+            return "C";
+        } else if (nilaii >= 60) {
+            return "D";
+        } else {
+            return "E";
+        }
+    }
+    let inputNilai = prompt("Masukkan Nilai");
+    let hasil = konversinilai(inputNilai);
+    document.writeln(`<b>Nilaimu adalah ${hasil}</b>`);
+    </script>
+</body>
+</html>
