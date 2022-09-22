@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Recursive</title>
+</head>
+
+<body>
+    <script>
+    // bedanya faktorial dan recursive, kalau faktorial nilainya tambah besar, sedangkan recursive angkanya menurun
+        function faktorial(value){
+            let result = 1;
+            for (let i = 1; i <= value; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+    console.info(faktorial(10));
+
+    // recursive
+    function faktorialrecursive(value) {
+        if(value === 1){
+            return 1; 
+        } else {
+            return value * faktorialrecursive(value - 1)
+        }
+        
+    }
+    console.info(faktorialrecursive(10));
+    document.writeln(faktorialrecursive(5));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds and Borders</title>
+    <style type="text/css">
+        div {
+            width: 24%;
+            height: 270px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 270px;
+            display: inline-block;
+            font-size: 40px;
+            color: #fff;
+        }
+        
+        .box-1 {
+            background-color: #4287f5;
+            background-image: url(https://www.lamudi.co.id/journal/wp-content/uploads/2022/03/modern-minimalis.jpg);
+            background-repeat: no-repeat;
+            background-image: url(https://insinyurbangunan.com/wp-content/uploads/2019/05/spesifikasi-meja-komputer-minimalis-.jpg),
+            linear-gradient(to right, rgba (255, 255, 255, 9), rgba(255, 255, 255, 0)),
+            url(https://www.lamudi.co.id/journal/wp-content/uploads/2022/03/modern-minimalis.jpg);
+            background-position: right,center, left, center;
+            background-size: cover, auto, cover, cover;
+        }
+
+        .box-2 {
+            background-color: #4287f0;
+            background-attachment: scroll;
+        }
+
+        .box-3 {
+            background-color: rgb(65, 135, 245);
+            background-attachment: fixed;
+        }
+
+        .box-4 {
+            background-color: rgba(66, 135, 245, 0,5);
+            background-attachment: local;
+        }
+
+        .box-2, .box-3, .box-4 {
+            background-image: url(https://2.bp.blogspot.com/-JKD7lod7Wa0/Xa_INrKD1KI/AAAAAAABDF0/Hzs_hXV4h8caY3uM-pi6bGi7Q1z_NkcmACLcBGAsYHQ/w600/meja-komputer-minimalis-modern-.jpg);
+            background-image: url(https://i.pinimg.com/550x/73/4e/e9/734ee94ae4f3020d974114ad94c2701e.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-1">BOX 1</div>
+    <div class="box-2">BOX 2</div>
+    <div class="box-3">BOX 3</div>
+    <div class="box-4">BOX 4</div>
+</body>
+</html>

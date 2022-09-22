@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function dalam function</title>
+</head>
+
+<body>
+    <script>
+        // function dalam function disebut inner, yang mana hanya bisa dipanggil dan dibaca oleh scope inner //
+        function luaran() {
+            function inner() {
+                console.info("ini adalah function inner")    
+            }
+            inner()
+            inner()
+            inner()
+        }
+        
+        luaran();
+        // inner(); // kodingan ini tidak akan terbaca karena inner ada diluar function inner dan tidak berlaku di function luaran
+    </script>
+</body>
+
+</html>

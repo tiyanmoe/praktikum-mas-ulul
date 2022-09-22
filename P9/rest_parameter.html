@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+
+<body>
+    <script>
+        // rest parameter berguna untuk?
+        function sum(name, ...data) {
+            let total = 0;
+            for (const item of data) {
+                total += item;
+            }
+            document.writeln(`Total ${name} is ${total}`);
+        }
+        sum("Orance", 10, 20, 30, 40, 50, 60);
+        sum("Apple", 10, 20, 30, 40, 50, 60);
+        sum("Banana", 10, 20, 30, 40, 50, 60);
+
+        // cara penulisan array pertama
+        const values = [10, 10, 10, 10, 10];
+        sum("Test", ...values);
+
+        // cara penulisan array kedua
+        sum("Test", ...[10, 10, 10, 10, 10]);
+
+        // jika parameter kosong maka ditambahkan arguments dengan nama bebas
+        function oldsum() {
+            let total = 0;
+            for (const contohargumen of arguments) {
+                total += contohargumen;
+            }
+            document.writeln(`<p> Total is ${total}</p>`)
+        }
+        oldsum(1, 2, 3, 4, 5);
+    </script>
+</body>
+
+</html>
