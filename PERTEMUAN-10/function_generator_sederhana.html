@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator Sederhana</title>
+</head>
+<body>
+    <script>
+        function* createNames() {
+            yield "Eko";
+            yield "Kurniawan";
+            yield "Khennedy"
+        }
+
+        const names = createNames();
+        for (const name of names) {
+            console.info(name);
+        }
+    </script>
+</body>
+</html>

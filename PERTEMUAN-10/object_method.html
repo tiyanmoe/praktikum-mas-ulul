@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+
+<body>
+    <script>
+        // menyisipkan object ke method yang didalamnya ada function
+        const person = {
+            name: "Eko",
+            sayAlo: function (name){
+                alert(`Hallo ${name}`);
+            }
+        }
+        person.sayAlo('Budi');
+
+        // menyisipkan Arrow Function (Lazy) kedalam object method
+        const person1 = {
+            name: "Eko",
+            sayAlo: (name) => alert(`Hallo ${name}`)};
+        person1.sayAlo('Budi');
+
+        // menambahkan method ke object
+        const orang = {
+            name: "Eko"};
+        
+        orang.sayAlo = function (name){
+            alert(`Hello ${name}`);
+        }
+        orang.sayAlo = name => alert(`Hey ${name}`);
+        orang.sayAlo(`Budi`);
+    </script>
+</body>
+
+</html>

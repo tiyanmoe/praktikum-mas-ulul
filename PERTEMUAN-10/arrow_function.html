@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Arrow</title>
+</head>
+
+<body>
+    <script>
+        // 1. ARROW FUNCTION
+        // ini adalah contoh penulisan function arrow yang paling ribet
+        const sayHello = (name) => {
+            const say = `Halodek ${name}`;
+            console.info(say);
+        }
+        sayHello("Eko");
+
+        // ini adalah contoh penulisan function arrow yang tidak ribet (tanpa block)
+        // block yang dimaksud adalah kurung kurawal {}
+        const sayAlo = (name) => console.info(`Halodek ${name}`);
+        sayAlo("Budi");
+
+        // 2. ARROW FUNCTION RETURN
+        // pake return
+        const sum = (first, second) => {
+            return first + second;
+        }
+        console.info(sum(100, 100));
+
+        // tanpa return / lebih simpel
+        const sum1 = (first, second) => first + second;
+        console.info(sum1(100, 100));
+
+        // 3. ARROW FUNCTION SEBAGAI PARAMETER
+        function gimmeName(callback) {
+            callback("Eko Budi Santoso");
+        }
+        gimmeName(name => console.info(`Halodeck ${name}`));
+    </script>
+</body>
+
+</html>

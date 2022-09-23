@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS</title>
+</head>
+<body>
+    <script>
+        // 1. penerapan this di global scope
+        // console.info(this);
+
+        // 2. penerapan this sebagai object method
+        // function sample() {
+        //     console.info(this);
+            
+        //     function inner(){
+        //         console.info(this);
+        //     }
+        //     inner();
+        // }
+        // sample();
+
+        const person = {
+            name: "Eko",
+            sayHello: function (value) {
+                console.info(`Halodekkk ${value} My Name is ${this.name}`);
+            }
+        };
+        person.sayHello("Budi");
+        person.sayHello("Joko");
+    </script>
+</body>
+</html>

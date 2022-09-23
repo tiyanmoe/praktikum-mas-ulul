@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator Kompleks | LAZY</title>
+</head>
+
+<body>
+    <script>
+        // perbedaan yield (lazy) dan array (eager)
+        // lazy
+        function* buatGanjil(value) {
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    console.info(`Yield ${i}`);
+                    yield i;
+                }
+            }
+        }
+
+        const numberyield = buatGanjil(100);
+        // for (const number of numberyield) {
+        //     console.info(number);
+        // }
+        // ini digunakan untuk menampilkan beberapa data saja.
+        console.info(numberyield.next().value);
+        console.info(numberyield.next().value);
+        console.info(numberyield.next().value);
+        console.info(numberyield.next().value);
+
+        // eager
+        function buatGanjilArray(value) {
+            const result = [];
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    console.info(`ini Yield ${i}`);
+                    result.push(i)
+                }
+            }
+            return result;
+        }
+
+        const numbers = buatGanjilArray(100);
+        // for (const angka of angkaGanjil) {
+        //     console.info(angka);
+        // }
+    </script>
+</body>
+
+</html>
