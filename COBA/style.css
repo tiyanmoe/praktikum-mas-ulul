@@ -18,22 +18,23 @@ body{
 }
 
 .logo a{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     float: left;
     font-family: 'Courier New', Courier, monospace;
     color: #40a125;
+    padding: 5px;
 }
 
-.menu{
-    float: right;
-}
+/*.menu{*/
+/*    float: right;*/
+/*}*/
 
 nav{
     width: 100%;
     margin: auto;
     display: flex;
-    line-height: 80px;
+    /*line-height: 80px;*/
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -41,27 +42,60 @@ nav{
     text-align: center;
 }
 
-nav ul{
+/*nav ul{*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*nav ul li{*/
+/*    float: left;*/
+/*}*/
+
+/*nav ul li a{*/
+/*    color: rgb(60, 182, 182);*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    padding: 0px, 16px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*nav ul li a:hover{*/
+/*    text-decoration: underline;*/
+/*}*/
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: rgb(223, 241, 121);
 }
 
-nav ul li{
+nav li {
     float: left;
 }
 
-nav ul li a{
-    color: rgb(60, 182, 182);
-    font-weight: bold;
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    color: #40a125;
     text-align: center;
-    padding: 0px, 16px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-nav ul li a:hover{
-    text-decoration: underline;
+nav li a:hover:not(.active) {
+    background-color: darkgreen;
+    color: white;
+}
+
+.active {
+    background-color: #04AA6D;
 }
 
 section{
