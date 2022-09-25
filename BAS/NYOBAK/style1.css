@@ -1,0 +1,147 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 500;
+    float: left;
+    font-family: Mistral;
+    color: #4E9F3D;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: #E7FBBE;
+    z-index: 1;
+}
+
+.menu {
+    float: right;
+}
+
+a.tbl-kuning {
+    background: #F0BB62;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-kuning:hover {
+    background: #4E9F3D;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    color: white;
+    box-shadow: 1px, 1px, 1px, g;
+}
+
+.container{
+    width: 100%;
+}
+
+.container .row{
+    width: 80%;
+    margin: auto;
+}
+
+.container .row .header{
+    width: 86%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .row .header h1{
+    padding-top: 30px;
+    font-size: 45px;
+    color: teal;
+}
+
+.container .row .header p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #182747;
+    text-align: justify;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.content .card{
+    flex: 2;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+/* .content .card img{
+    width: 100%;
+    height: auto;
+} */
+
+.content .card .h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.content .card p{
+    font-size: 15px;
+    color: teal;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+}
