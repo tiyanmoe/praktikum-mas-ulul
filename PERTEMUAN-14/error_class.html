@@ -10,12 +10,19 @@
 
 <body>
     <script> 
-    
-        // 1. ERROR
+
+        // 3. ERROR CLASS
+        class ValidationError extends Error { // parent Error merupakan bawaan dari javascript yang tidak perlu dibuat class nya, dan otomatis akan terdeteksi oleh js
+            constructor(message, field) {
+                super(message);
+                this.field = field;
+            }
+        }
+
         class MathUti1 {
             static sum(...numbers) {
                 if (numbers.length === 0) {
-                    throw new Error("Total parameter harus lebih dari 0");
+                    throw new ValidationError("Total parameter harus lebih dari 0", "NUMBER");
                 }
 
                 let total = 0;
@@ -32,12 +39,16 @@
         // const result = MathUti1.sum(1, 1, 1, 1, 1);
         // console.info(result);
 
-        // 2. HANDLING ERROR
         try {
-            console.info(MathUti1.sum());
-            console.info("Jika diatasku error maka saya tidak jalankan karena langsung di lempat ke catch");
+            console.info(MathUti1.sum()); // validation error
+            // console.info(MathUti1.sum(aafdsdafs)); // error lainnya
+            console.info("Eko");
         } catch (error) {
-            console.info(`Terjadi error : ${error.message}`);
+            if(error instanceof ValidationError) {
+                console.info(`Terjadi error di field ${error.field} dengan error ${error.message}`)
+            } else {
+                console.info(`Terjadi error : ${error.message}`);
+            }
         } finally {
             console.info("Program sudah selesai dijalankan");
         }

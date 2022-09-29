@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script> 
+    
+    {
+        // array loop
+        const array = ["Eko", "Kurniawan", "Khannedy"];
+
+        array.forEach(function (value, index) {
+            console.info(`${index} : ${value}`);
+        });
+
+        array.forEach((value, index) => console.info(`${index} : ${value}`));
+
+        array.forEach(value => console.info(value));
+    
+    }
+
+    {
+        // array queue | Antrean / FIFO (First In First Out)
+
+        const queue = [];
+
+        queue.push("eko");
+        queue.push("kusnaidi");
+        queue.push("kohesi");
+
+        console.info(queue.shift());
+        console.info(queue.shift());
+        console.info(queue.shift());
+        console.info(queue.shift());
+
+    }
+
+    {
+        // array stack | Tumpukan / LIFO (Leave In First Out)
+
+        const stack = [];
+
+        stack.push("data satu");
+        stack.push("data dua");
+        stack.push("data tiga");
+
+        console.info(stack.pop());
+        console.info(stack.pop());
+        console.info(stack.pop());
+        console.info(stack.pop());
+        
+    }
+
+    {
+        // array search
+
+        const source = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+
+        console.info(source.find(value => value > 3));
+        console.info(source.findIndex(value => value > 3));
+        console.info(source.includes(7));
+        console.info(source.includes(5));
+        console.info(source.includes("5"));
+        console.info(source.indexOf(5)); // index ke 4
+        console.info(source.lastIndexOf(5)); // index ke 9
+        
+    }
+    
+    {
+        // array filter
+
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const ganjil = numbers.filter(value => value % 2 === 1);
+        const genap = numbers.filter(value => value % 2 === 0);
+        const rendah = numbers.filter(value => value < 4);
+
+        console.info(numbers);
+        console.info(ganjil);
+        console.info(genap);
+        console.info(rendah);
+        
+    }
+
+    {
+        // array transform | membuat/menciptakan data/array baru
+
+        const names = ["Moh", "Ulul", "Albab"];
+
+        const namesUpper = names.map(value => value.toUpperCase());
+        console.info(namesUpper);
+
+        const namesReduce = names.reduce((before, value) => before + " " + value);
+        console.info(namesReduce);
+
+        const namesReduce1 = namesUpper.reduce((before, value) => before + " " + value);
+        console.info(namesReduce1);
+
+        const namesRight = names.reduceRight((before, value) => before + " " + value);
+        console.info(namesRight);
+
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const total = numbers.reduce((before, value) => before + value);
+        console.info(total);
+        
+    }
+
+    </script>
+</body>
+
+</html>
