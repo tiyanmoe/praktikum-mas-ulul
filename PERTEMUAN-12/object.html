@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+</head>
+
+<body>
+    <script>
+        // ini adalah contoh constructor function
+        function Person(firstName, lastName) { // penambahan parameter
+            // ini adalah struktur property
+            this.firstName = "";
+            this.lastName = "";
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my name is ${this, firstName}`);
+            }
+        }
+
+        // ini adalah struktur object
+        const sule = new Person();
+            // cara lama
+            // sule.firstName = "Ibnu";
+            // sule.lastName = "Khaldun";
+        console.log(sule);
+
+        const eko = new Person();
+        console.log(eko);
+
+        const eni = new Person("Eko", "Khannedy");
+        eni.sayHello("Joko");
+        console.log(eni);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bintang Looping | BERDASAR ARAHAN PAK ULUL</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        /// TUGAS BINTANG BARIS 1 - bintang persegi //
+        function kotak(panjang) {
+            let hasil = '';
+            for (let i = 0; i < panjang; i++) { // baris
+                for (let j = 0; j < panjang; j++) { // kolom
+                    hasil += '* ';
+                    // hasil += `${i}`
+                }
+                hasil += '<br>';
+            }
+            return hasil;
+        }
+        document.writeln(kotak(10));
+        document.writeln('<br>');
+
+        // mainnya true dan false //
+        // jika true maka akan membaca kodingan dibawah, jika false kodingan akan berhenti membaca dan mengulang membaca yang lain //
+
+        document.writeln('<br>');
+        /// TUGAS BINTANG BARIS 2 - segitiga angka // 
+        function segitiga(panjang) {
+            let hasil = '';
+            for (let i = 0; i < panjang; i++) { // baris i kurang dari panjang
+                for (let j = 0; j <= i; j++) { // kolom
+                    hasil += `${i} `;
+                }
+                hasil += '<br>';
+            }
+            return hasil;
+        }
+        document.writeln(segitiga(10));
+        document.writeln('<br>');
+
+        document.writeln('<br>');
+        /// TUGAS BINTANG BARIS 3 - segitiga terbalik angka //
+        function segitigaterbalik(panjang) {
+            let hasil = '';
+            for (let i = 0; i <= panjang; i++) { // baris i kurang dari panjang
+                for (let j = i; j <= panjang; j++) { // kolom
+                    hasil += `${i} `;
+                    // hasil += `* `;
+                }
+                hasil += '<br>';
+            }
+            return hasil;
+        }
+        document.writeln(segitigaterbalik(9));
+        document.writeln('<br>');
+
+        document.writeln('<br>');
+        /// TUGAS BINTANG BARIS 4 - segitiga angka 1 // 
+        function segitiga1(panjang) {
+            let hasil = '';
+            for (let i = panjang; i > 0; i--) { //baris
+                for (let j = 1; j <= panjang; j++) { //kolom
+                    if (j >= i) {
+                        hasil += `${i} `;
+                    } // else
+                    // hasil+= '*'; }
+                }
+                hasil += '<br>';
+            }
+            return hasil;
+        }
+        document.writeln(segitiga1(10));
+        document.writeln("<br>");
+
+        document.writeln('<br>');
+        /// TUGAS BINTANG BARIS 5 - segitiga terbalik angka // 
+        function segitiga1angka(panjang) {
+            let hasil = '';
+            for (let i = panjang; i > 0; i--) { //baris
+                for (let j = 1; j <= panjang; j++) { //kolom
+                    if (j <= i) {
+                        hasil += `${i} `;
+                    } // else
+                    // hasil+= '*'; }
+                }
+                hasil += '<br>';
+            }
+            return hasil;
+        }
+        document.writeln(segitiga1angka(9));
+        document.writeln("<br>");
+
+
+        // TUGAS BINTANG BARIS 6 - piramid atas//
+        for (let i = 1; i <= 9; i++) {
+            for (let j = i; j <= 9; j++) {
+                document.write("_");
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write("*");
+            }
+            for (let l = 1; l <= i - 1; l++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.writeln("<br>");
+        // TUGAS BINTANG BARIS 7 - piramid bawah//
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("_");
+            }
+            for (let k = i; k <= 9; k++) {
+                document.write("*");
+            }
+            for (let l = i + 1; l <= 9; l++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
