@@ -72,12 +72,11 @@ header{
 }
 
 .container{
-    width: 100%;
+    min-height: 100% !important;
 }
 
 .container .row{
-    width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .container .row .header{
@@ -104,44 +103,68 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin: auto;
-}
-
-.content .card{
-    flex: 2;
-    margin: 50px 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
-}
-
-/* .content .card img{
-    width: 100%;
-    height: auto;
-} */
-
-.content .card .h4{
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-.content .card p{
-    font-size: 15px;
-    color: teal;
-    line-height: 1.5;
     padding: 10px;
 }
 
 
-#copyright {
-    text-align: center;
-    width: 100%;
-    padding: 50px 0px 50px 0px;
-    margin-top: 50px;
+/* Float four columns side by side */
+.col {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px){
-    .content{
-        flex-direction: column;
+/* Remove extra left and right margins, due to padding */
+.row2 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 850px;
+}
+img {
+    display: block;
+    border: none !important;
+    width: 100%;
+    height: 350px;
+    object-position: 50% top;
+    object-fit: cover;
+    padding: 0rem 0 !important;
+}
+.card-body {
+    flex: 1 0 70% !important;
+    max-height: calc(70% - 2rem) !important;
+    overflow: auto;
+    margin: 1rem 0 !important;
+    padding: 0rem 1rem !important;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card h3 {
+    margin-bottom: 10px;
 }
