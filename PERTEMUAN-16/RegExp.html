@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp (Regular Expression)</title>
+</head>
+<body>
+    <script>
+         {
+            // create regex
+
+            const regex1 = /eko/;
+            const regex2 = new RegExp("eko");
+            const regex3 = new RegExp(/eko/);
+         }
+
+         {
+            // test regex
+            const name = "eko kurniawan eko khannedy";
+            const regex = /ku/;
+            // const name = "6285232014922";
+            // const regex = /62/;
+
+            const result = regex.exec(name); // exec artinya eksekusi
+            console.info(result);
+            console.info(regex.exec("tidak ada"));
+
+            const test = regex.test(name);
+            console.info(test);
+            console.info(regex.test("tidak ada"));
+         }
+
+         {
+
+            // regex modifier
+
+            const name = "eko kurniawan\nEko Khannedy\nEdo Kurniawan";
+            // const regex1 = /eko/igm;
+            // const regex1 = /^e..o/igm;          // ^e.o artinya apapun huruf depannya yang penting ketemu e
+            // const regex1 = /e.o/igm;
+            // const regex1 = /^e..o/igm;
+            const regex1 = /^e^o/igm;
+            console.info(name);
+            
+            let result;
+            while ((result = regex1.exec(name)) !== null) {
+                console.log(result);
+            }
+            // console.log(regex1.exec(name));
+            console.info(name);
+
+            const regex2 = /Kurniawan/ig;
+            while ((result = regex2.exec(name)) !== null) {
+                console.info(result);
+            }
+
+         }
+
+        //  modifier regex ada 3 yaitu:
+        //  1. i = incase
+        //  2. g = global
+        //  3. m - multiline
+
+        {
+            // advanced regex
+            const regex = /ek[ioaeu]/ig;
+
+            const name = "edo eko eki eka eku eke edo eki eks";
+
+            console.info(name.match(/ek[ioaeu]/ig));                // outputnya berupa array
+            console.info(name.search(/ek[ioaeu]/ig));               // menghitung index char 
+            console.info(name.replace(/ek[ioaeu]/i, "kamu"));       // mengganti salah satu indeks dengan kata kamu
+            console.info(name.replaceAll(/ek[ioaeu]/ig, "kamu"));   // mengganti semua ek dengan kamu
+            console.info(name.split(/e/ig));                        // menampilkan array
+            console.info(name);
+            let gantiSemua = name.replaceAll(/ek[ioaeu]/ig, "kamu");
+            console.info(gantiSemua);
+        }
+
+    </script>
+</body>
+</html>
