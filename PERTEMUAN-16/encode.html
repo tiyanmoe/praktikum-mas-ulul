@@ -14,7 +14,7 @@
         // enkripsi berguna untuk mengamankan dan membiaskan beberapa karakter
 
         {
-            // encode url dan decode uri
+            // encode url dan decode url
 
             const url = "https://contoh.com/?name=Eko Kurniawan Khannedy";
             console.info(url)
@@ -31,13 +31,13 @@
 
             const value = "Eko&Kurniawan=Khannedy";
             const url = "http://contoh/com/?name=";
-            console.info(url = value);
+            console.info(url, value);
 
             const encoded = encodeURIComponent(value);
-            console.info(url = encoded);
+            console.info(url, encoded);
 
             const decoded = decodeURIComponent(encoded);
-            console.info(url = decoded);
+            console.info(url, decoded);
         }
 
     </script>
