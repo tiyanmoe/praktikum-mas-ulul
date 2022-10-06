@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Global</title>
+</head>
+
+<body>
+    <input id="clickMe" type="button" value="Click Me">
+
+    <script>
+        const button = document.getElementById("clickMe");
+
+        button.onclick = function (){
+            button.setAttribute("value", "You already click me right now!");
+            console.log('Button di Click');
+        };
+
+        // yang dijalankan click yang terakhir saja
+        // perbedaan event global dan event target yaitu
+        // event target bisa menjalankan berbagai eventlistener/beberapa fungsi
+        // sedangkan event global hanya bisa menjalankan satu fungsi saja
+
+        // button.onclick = function (){
+        //     console.log('Oke');
+        // };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Attribute (attr)</title>
+</head>
+<body>
+    <img id="logo" alt="uco">
+
+    <script>
+        const logo = document.getElementById("logo");
+
+        // cara yang panjang
+        // const src = document.createAttribute("src");
+        // src.value = "luv.jpg";
+        // logo.setAttributeNode(src);
+
+
+        // cara yang simpel
+        logo.setAttribute("src", "luv.jpg");
+        logo.setAttribute("alt", "kyungsoo");
+    </script>
+</body>
+</html>

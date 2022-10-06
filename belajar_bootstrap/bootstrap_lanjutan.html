@@ -5,15 +5,65 @@
   <meta charset="UTF-8">
   <title>Belajar Bootstrap</title>
   <!-- memanggil css secara offline -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- memanggil css secara online -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="container mb-5 mt-3">
-    <h2 class="mb-3">Ada apa saja di Qoryatussalam?</h2>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Tentang Kami</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Masuk</a>
+    </li>
+  </ul>
+  </div>
+
+  <div class="container mb-5 mt-3">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+  </div>
+
+  <div class="container mb-5 mt-3">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="luv.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="luv.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="luv.jpg" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
+
+  <div class="container mb-5 mt-3">
+    <h2 class="mb-3">Pondok Pesantren Programmer Qoryatussalam Yogyakarta</h2>
     <div class="row gx-3 gy-3">
       <div class="col-md-3">
         <!-- Dari sini copaste nya -->
@@ -80,7 +130,7 @@
             <h5>Kitab yang Diajarkan</h5>
           </a>
           <p class="text-justify">Kitab Al-Hikam. Risalah Ahlus Sunnah wal Jamaah. Fathul Qorib. Adabul Alim Muta'alim.
-            Mabadi'ul Awaliyyah. Bahtsul Masail Bab Haid</p>
+            Mabadi'ul Awaliyyah. Fiqh Wanita</p>
         </div>
       </div>
       <div class="col-md-3">
@@ -99,8 +149,8 @@
             <img src="pppqs.png" class="img-fluid rounded" alt="...">
             <h5>Kamar</h5>
           </a>
-          <p class="text-justify">Ada 3 kamar yang ada di PPPQS yaitu Kamar A(A1 dan A2), Kamar B(B1, B2, B3), Kamar
-            C(C1, C2, C3, C4, C5)</p>
+          <p class="text-justify">Ada 3 kamar yang ada di PPPQS yaitu Kamar A(A1 dan A2), Kamar B(B1, B2), Kamar
+            C(C1, C2, C3, C4, C5, C6)</p>
         </div>
       </div>
 
@@ -302,9 +352,9 @@
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <label class="form-check-label" for="exampleCheck1">Centang disini</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Masuk</button>
     </form>
   </div>
 
@@ -322,7 +372,7 @@
         <input type="number" class="form-control form-control-sm">
       </div>
       <div class="mb-3">
-        <label class="form-label">Email address</label>
+        <label class="form-label">Alamat Email</label>
         <input type="email" class="form-control" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
@@ -331,20 +381,20 @@
         <input type="password" class="form-control">
       </div>
       <div class="mb-3">
-        <label class="form-label">Example textarea</label>
+        <label class="form-label">Ceritakan Pengalamanmu</label>
         <textarea class="form-control" rows="3"></textarea>
       </div>
       <div class="mb-3">
-        <label class="form-label">Default file input example</label>
+        <label class="form-label">Foto selama di Qoryatussalam</label>
         <input class="form-control" type="file" accept="image/*">
       </div>
       <div class="mb-3">
-        <label class="form-label">Pilih List Berikut</label>
+        <label class="form-label">Materi Favorit</label>
         <select class="form-select">
           <option disabled selected>--Pilihan Opsi--</option>
-          <option>Pilihan 1</option>
-          <option>Pilihan 2</option>
-          <option>Pilihan 3</option>
+          <option>JavaScript</option>
+          <option>CSS</option>
+          <option>HTML</option>
         </select>
       </div>
       <div class="mb-3">
@@ -370,16 +420,16 @@
       <div class="mb-3">
         <div class="form-check form-check-inline">
           <input type="radio" class="form-check-input" name="gender">
-          <label class="form-check-label">Laki-laki</label>
+          <label class="form-check-label">Santri Laju</label>
         </div>
         <div class="form-check form-check-inline">
           <input type="radio" class="form-check-input" name="gender">
-          <label class="form-check-label">Perempuan</label>
+          <label class="form-check-label">Santri Mukim</label>
         </div>
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text">Rp.</span>
-        <input type="number" class="form-control" placeholder="Contoh : 10000">
+        <input type="number" class="form-control" placeholder="Biaya Hidup, contoh : 10000">
       </div>
       <div class="mb-3">
         <input type="radio" class="btn-check" name="lapar" id="pilihan1" autocomplete="off">
@@ -392,10 +442,12 @@
         <label class="btn btn-outline-success" for="pilihan3">Belum Jajan</label>
       </div>
       <div class="mt-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Kirim</button>
       </div>
+  </div>
+  </form>
 
-      <div class="row g-3 mt-5">
+  <!-- <div class="row g-3 mt-5">
         <div class="col-sm-7">
           <input type="text" class="form-control" placeholder="City" aria-label="City">
         </div>
@@ -423,9 +475,207 @@
         <div class="col-sm-3">
           <input type="text" class="form-control" placeholder="State" aria-label="State">
         </div>
+      </div> -->
+
+  <div class="container mb-5 mt-3">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Al-Hikam #1 
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Bersandarlah pada Allah, Jangan pada Amal.</strong> Di antara tanda-tanda orang yang senantiasa
+            bersandar kepada amal-amalnya, adalah kurangnya ar-raja' (rasa harap kepada rahmat Allah) di sisi alam yang fana.
+          </div>
+        </div>
       </div>
-    </form>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Al-Hikam #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Tajrid dan Kasab</strong> Keinginanmu untuk tajrid, sementara Allah masih menegakkan engkau di dalam asbab,
+            merupakan syahwah yang tersamar (halus). Dan keinginanmu kepada asbab, pada saat Allah sudah menegakkan engkau dalam tajrid,
+            merupakan suatu kejatuhan dari himmah yang tinggi.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Al-Hikam #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Kekuatan Takdir</strong>Kekuatan himmah-himmah tidak akan mampu mengoyak tirai qadar-qadar.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="container mb-5 mt-3">
+    <div class="alert alert-primary" role="alert">
+      Dalam proses pembelajaran, guru dan murid sama-sama belajar.
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      Barang siapa yang mempunyai niat dan berjalan mencari ilmu, maka Allah akan membukakan jalan ke dalam surga.
+    </div>
+    <div class="alert alert-success" role="alert">
+      Hal sesederhana apapun jika dibarengi dengan ilmu maka pahalanya akan lebih berat.
+    </div>
+    <div class="alert alert-danger" role="alert">
+      Apa kamu masih meragukan Allah dalam mengatur rezekimu?
+    </div>
+    <div class="alert alert-warning" role="alert">
+      Hubungan antara yang mengajar dan belajar seperti dua jari, berkaitan satu sama lain.
+    </div>
+    <div class="alert alert-info" role="alert">
+      Berproses menjadi baik itu tidak ada batasnya.
+    </div>
+    <div class="alert alert-light" role="alert">
+      mengajarkan ilmu, belajar ilmu, mendengarkan ilmu, menyukai ilmu dan nggak suka dengan ilmu.
+    </div>
+    <div class="alert alert-dark" role="alert">
+      mau belajar menjadi santri progressif? di <a href="qoryatussalam.com" class="alert-link">PP. Qoryatussalam</a> aja!
+    </div>
+  </div>
+  <div class="container mb-5 mt-3">
+  <div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done girl!</h4>
+    <p>Amal-amal itu semata bentuk-bentuk yang tampil, adapun ruh-ruh yang menghidupkannya adalah
+      hadirnya sirr ikhlas (cahaya ikhlas) padanya.
+    </p>
+    <hr>
+    <p class="mb-0">Ruhnya amal yaitu ikhlas, Al-Hikam Pasal 10</p>
+  </div>
+  </div>
+
+  <div class="container mb-5 mt-3">
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <span class="page-link">2</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="container mb-5 mt-3">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+    </symbol>
+    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+    </symbol>
+  </svg>
+
+  <div class="alert alert-primary d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+      <use xlink:href="#info-fill" />
+    </svg>
+    <div>
+      Apa yang membuat saya bahagia?
+    </div>
+  </div>
+  <div class="alert alert-success d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+      <use xlink:href="#check-circle-fill" />
+    </svg>
+    <div>
+      Saya akan mendatangi siapa ketika resah?
+    </div>
+  </div>
+  <div class="alert alert-warning d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+      <use xlink:href="#exclamation-triangle-fill" />
+    </svg>
+    <div>
+      Apa kelemahan dan kelebihan saya?
+    </div>
+  </div>
+  <div class="alert alert-danger d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+      <use xlink:href="#exclamation-triangle-fill" />
+    </svg>
+    <div>
+      Mari berpikir kembali!
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5 mt-3">
+  <button type="button" class="btn btn-primary">
+    Notifikasi <span class="badge bg-secondary">5</span>
+  </button>
+  <button type="button" class="btn btn-primary position-relative">
+    Santri Qoryatussalam
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+      <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>
+</div>
+
+<div class="container mb-5 mt-3">
+  <button type="button" class="btn btn-primary">Syahadat</button>
+  <button type="button" class="btn btn-secondary">Sholat</button>
+  <button type="button" class="btn btn-success">Puasa</button>
+  <button type="button" class="btn btn-info">Zakat</button>
+  <button type="button" class="btn btn-dark">Haji</button>
+</div>
+
+<div class="container mb-5 mt-3">
+  <div class="card" style="width: 18rem;">
+    <img src="pppqs.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Doa hari ini!</h5>
+      <p class="card-text">Ya Allah, jika doaku terhalang dosaku, maka kabulkanlah doa ibuku.</p>
+      <a href="#" class="btn btn-primary">Aamiin</a>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5 mt-3">
+  <div class="card border-success mb-3" style="max-width: 18rem;">
+    <div class="card-header bg-transparent border-success">Halo teman-teman!</div>
+    <div class="card-body text-success">
+      <h5 class="card-title">Remember...</h5>
+      <p class="card-text">Kita tidak berhak menanyakan "Kenapa Allah berbuat demikian", tetapi kita yang akan ditanya
+        "Apa yang telah kita perbuat dengan keadaan demikian".
+      </p>
+    </div>
+    <div class="card-footer bg-transparent border-success">KH. Uzairon, Al-Fattah, Temboro</div>
+  </div>
+</div>
 
 </body>
 

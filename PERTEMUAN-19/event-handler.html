@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+</head>
+<body>
+    <input id="clickMe" type="button" value="Click Me">
+    <img id="logo">
+    <h1 id="judul">Do Kyungsoo</h1>
+    <p id="keterangan">Uco adalah salah satu member E.X.O</p>
+
+    <script>
+        const button = document.getElementById("clickMe");
+
+        button.addEventListener("click", function (){
+            button.setAttribute("value", "You already click me");
+            alert('Haraaaonnn');
+            document.getElementById("keterangan").remove();
+            document.getElementById("judul").textContent = "DKS";
+        });
+
+        button.addEventListener("click", function(){
+            console.info('Button sudah di klik');
+            document.getElementById("logo").setAttribute("src", "luv.jpg");
+        });
+
+    </script>
+</body>
+</html>

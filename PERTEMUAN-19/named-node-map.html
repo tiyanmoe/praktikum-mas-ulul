@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Node Map</title>
+</head>
+<body>
+    <img id="logo" src="luv.jpg" alt="uco" title="ayangnya tiyanmoe">
+
+    <script>
+        const logo = document.getElementById("logo");
+        const attributes = logo.attributes; 
+        
+        // cara lama
+        // const attributes = document.getElementById("logo").attributes;
+        // console.info(attributes);
+        // console.info(`${atrributes[0].name} : ${attributes[0].value}`);
+        // console.info(`${atrributes[1].name} : ${attributes[1].value}`);
+        // console.info(`${atrributes[2].name} : ${attributes[2].value}`);
+
+        // cara simpel menggunakan for of
+        for (let doku of attributes) {
+            console.info(`${doku.name} : ${doku.value}`);
+        }
+
+    </script>
+</body>
+</html>
