@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Global</title>
+</head>
+<body>
+    <!-- <input id="clickMe" type="button" value="Click Me!"> -->
+    <input id="clickMe" type="text" value="Coba ubah">
+    <h3 id="targetku">ini belum ada perubahan</h3>
+
+    <script>
+
+        const button = document.getElementById("clickMe");
+
+        // button.onclick = function (){
+        //     button.setAttribute("value", "You already click me!");
+        //     console.log('Button di Click');
+        // };
+
+        // // yang dijalankan click yang terakhir saja
+        // button.onclick = function (){
+        //     console.log('Ok');
+        // };
+        
+        // button.onchange = function (){
+        //     document.getElementById("targetku").textContent = button.value;
+        // };
+
+        button.onkeyup = function (){
+            document.getElementById("targetku").textContent = button.value;
+        };
+
+        
+    </script>
+</body>
+</html>
